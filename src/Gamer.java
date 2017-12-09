@@ -1,5 +1,3 @@
-package tombola.server;
-
 import java.io.*;
 import java.net.*;
 import java.security.MessageDigest;
@@ -62,7 +60,7 @@ public class Gamer implements Runnable{
                 byte[] decoded = new byte[6];
                 byte[] encoded = new byte[6];
                 in.read(encoded, 0, encoded.length);
-                byte[] key = byte[4] {167, 225, 225, 210};
+                byte[] key = new byte[] {(byte) 167, (byte) 225, (byte) 225, (byte) 210};
 
                 for (int i = 0; i < encoded.length; i++) {
                     decoded[i] = (byte)(encoded[i] ^ key[i & 0x3]);

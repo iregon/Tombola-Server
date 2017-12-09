@@ -1,5 +1,3 @@
-package tombola.server;
-
 import java.net.*;
 import java.util.Scanner;
 import java.util.regex.Matcher;
